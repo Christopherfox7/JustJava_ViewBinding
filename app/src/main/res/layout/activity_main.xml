@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/text_editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/name_hint"
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/toppings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="@string/toppings"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/whipped_cream">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/chocolate">
+
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:text="@string/quantity"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#939393"
+                android:text="@string/minus"
+                android:textSize="20sp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/num_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/counter"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/plus"
+                android:textSize="20sp">
+
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/order_summary"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/start_text"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/calculate"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:textSize="16sp">
+
+        </Button>
+    </LinearLayout>
+</ScrollView>
